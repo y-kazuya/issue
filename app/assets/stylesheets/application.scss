@@ -1,0 +1,22 @@
+//////////library//////////////
+////////////////////////////////
+
+//////////config ///////////////
+@import "./reset";
+@import "./config/color";
+///////////////////////////////
+
+//////////modlues//////////////////
+@import "./modlues/button";
+@import "./modlues/flash";
+///////////////////////////////////
+
+/////////pages//////////////////
+
+@import "./public/pages/top";
+@import "./public/pages/for_city";
+@import "./public/pages/for_student";
+@import "./public/pages/for_company";
+
+@import "./public/contacts/show";
+///////////////////////////////
