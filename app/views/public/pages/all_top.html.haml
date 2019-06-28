@@ -1,0 +1,64 @@
+= provide(:title, "top")
+/ ナビゲーションを設定
+/ メインビジュアル
+/ TOP画像
+= image_tag "top_image.jpg", alt: "TOP画像" , :class => "img-fluid"
+/ 概要欄
+= image_tag "explanation.jpg", alt: "概要欄" , :class => "img-fluid"
+/ スライドショー
+.py-4
+  .container
+    / centerタグはダメなのでほかのやり方でやること(分からなかったので代用)
+    %center
+      .col-8
+        .mx-auto
+          %h2.text-center.bg-warning{:style => "margin:30px 0 30px 0; padding:12px 0 12px 0"} 行政課題・事例など
+    / カルーセル外枠
+    #main_visual.carousel.slide{"data-ride" => "carousel"}
+      / インジケーター
+      %ol.carousel-indicators
+        %li.active{"data-slide-to" => "0", "data-target" => "#main_visual"}
+        %li{"data-slide-to" => "1", "data-target" => "#main_visual"}
+        %li{"data-slide-to" => "2", "data-target" => "#main_visual"}
+      / カルーセル内枠
+      .carousel-inner
+        .carousel-item.active
+          = image_tag "viewport.jpg", alt: "コメント" , :class => "img-fluid"
+        .carousel-item
+          = image_tag "viewport.jpg", alt: "コメント" , :class => "img-fluid"
+        .carousel-item
+          = image_tag "viewport.jpg", alt: "コメント" , :class => "img-fluid"
+      / コントローラ
+      %a.carousel-control-prev{"data-slide" => "prev", :href => "#main_visual", :role => "button"}
+        / 前に戻るボタン
+        %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+        %span.sr-only 前に戻る
+      %a.carousel-control-next{"data-slide" => "next", :href => "#main_visual", :role => "button"}
+        / 次に進むボタン
+        %span.carousel-control-next-icon{"aria-hidden" => "true"}
+        = succeed "\u3000" do
+          %span.sr-only 次に進む
+/ 利用者の声
+.container
+  .row.no-gutters
+    .col-12.bg-primary
+      = image_tag "samune.jpg", alt: "サムネ" , :class => "pull-left float-left img-thumbnail rounded-circle img-fluid"
+      %h1.text-left タイトル
+      %p このテキストまで回り込ませる。
+    .col-12.bg-info
+      = image_tag "samune.jpg", alt: "サムネ" , :class => "pull-left float-right img-thumbnail rounded-circle img-fluid"
+
+      %h1.text-right タイトル
+      %p{:style => "margin-left: 15px;"} このテキストまで回り込ませる。
+    .col-12.bg-primary
+      = image_tag "samune.jpg", alt: "サムネ" , :class => "pull-left float-left img-thumbnail rounded-circle img-fluid"
+      %h1.text-left タイトル
+      %p このテキストまで回り込ませる。
+/ 課題一覧ボタン
+.col-12.clearfix
+  .mx-auto
+    / centerタグはダメなのでほかのやり方でやること(分からなかったので代用)
+    %center
+      %a.btn.btn-warning.border-danger{:href => "#", :role => "button", :style => "border-radius:50px; margin:80px 0 80px 0;"}
+        %h3{:style => "padding:5px 50px 0 50px"}
+          %strong 課題一覧を見てみる

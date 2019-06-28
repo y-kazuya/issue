@@ -1,0 +1,30 @@
+%nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top
+  .container
+    %a.navbar-brand{:href => "#"} Website name
+    / 切り替えボタン
+    %button.navbar-toggler{"aria-controls" => "navbar-content", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar-content", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    / ナビゲーションメニュー
+    / 左側メニュー
+    #navbar-content.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            Top
+            %span.sr-only (current)
+        %li.nav-item
+          %a.nav-link{:href => "#"} About
+        %li.nav-item
+          %a.nav-link{:href => "#"} Menu
+        %li.nav-item
+          %a.nav-link{:href => "#"} Coupon
+        / ドロップダウン
+        %li.nav-item.dropdown
+          %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "index.html", :role => "button"} Information
+          .dropdown-menu{"aria-labellendby" => "navbarDropdown"}
+            %a.dropdown-item{:href => "#"} Shop
+            %a.dropdown-item{:href => "#"} Access
+      / 右側メニュー
+      %ul.navbar-nav
+        %li.nav-item
+          %a.nav-link.btn.btn-info{:href => "#"} Contact
