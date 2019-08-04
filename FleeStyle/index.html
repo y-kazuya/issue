@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <title>Flee Style</title>
+</head>
+<body>
+  <!--ナビゲーションを設定-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container"> <a class="navbar-brand" href="#">Flee Style</a>
+      <!--切り替えボタン--><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--ナビゲーションメニュー-->
+      <!--左側メニュー-->
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="#">Top 
+                <span class="sr-only">(current)</span>
+              </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Menu</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Coupon</a> </li>
+          <!--ドロップダウン-->
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information </a>
+            <div class="dropdown-menu" aria-labellendby="navbarDropdown"> <a class="dropdown-item" href="#">Shop</a> <a class="dropdown-item" href="#">Access</a> </div>
+          </li>
+        </ul>
+        <!--右側メニュー-->
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="#" class="nav-link btn btn-info">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--メインビジュアル-->
+  <!--TOP画像-->
+  <div class="top-image">
+  <img src="img/top_image.jpg" class="img-fluid img-top" alt="TOP画像">
+  <h1>Flee Style</h1>
+  <a href="#">
+    <h3>学生TOP</h3>
+  </a>
+  <a href="#">
+    <h4>企業TOP</h4>
+  </a>
+  </div>
+  <!--概要欄-->
+  <center> <img src="img/meritto.jpg" class="img-fluid" alt="メリット概要"> </center>
+  <!--スライドショー-->
+  <div class="py-4">
+    <div class="container">
+      <!--centerタグはダメなのでほかのやり方でやること(分からなかったので代用)-->
+      <center>
+        <div class="col-8">
+          <div class="mx-auto">
+            <div class="gyousei-title"> <img src="img/gyousei-title.jpg" class="img-fluid" alt="行政課題・事例など"> </div>
+          </div>
+        </div>
+      </center>
+      <!--カルーセル外枠-->
+      <div id="main_visual" class="carousel slide" data-ride="carousel">
+        <!--インジケーター-->
+        <ol class="carousel-indicators">
+          <li data-target="#main_visual" data-slide-to="0" class="active"></li>
+          <li data-target="#main_visual" data-slide-to="1"></li>
+          <li data-target="#main_visual" data-slide-to="2"></li>
+        </ol>
+        <!--カルーセル内枠-->
+        <div class="carousel-inner">
+          <div class="carousel-item active"> <img class="img-fluid" src="img/viewport.jpg" alt="コメント"> </div>
+          <div class="carousel-item"> <img class="img-fluid" src="img/viewport.jpg" alt="コメント"> </div>
+          <div class="carousel-item"> <img class="img-fluid" src="img/viewport.jpg" alt="コメント"> </div>
+        </div>
+        <!--コントローラ-->
+        <a class="carousel-control-prev" href="#main_visual" role="button" data-slide="prev">
+          <!--前に戻るボタン--><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">前に戻る</span> </a>
+        <a class="carousel-control-next" href="#main_visual" role="button" data-slide="next">
+          <!--次に進むボタン--><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">次に進む</span>　 </a>
+      </div>
+    </div>
+  </div>
+  <!--利用者の声-->
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="box bg-third">
+        <div class="pict"><img src="img/sample1.jpg" width="250px" height="250px" class=" img-thumbnail rounded-circle  img-fluid" style="padding:0;margin:15px 15px 15px 0; max-width:500px;"></div>
+        <div class="text">
+          <h4>「メインタイトル」</h4>
+          <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+              サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+        </div>
+      </div>
+      <div class="box bg-third">
+        <div class="pict"><img src="img/sample2.jpg" width="250px" height="250px" class=" img-thumbnail rounded-circle img-fluid" style="padding:0;margin:15px 15px 15px 0; max-width:500px;"></div>
+        <div class="text">
+          <h4>「メインタイトル」</h4>
+          <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+            サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+        </div>
+      </div>
+      <div class="box bg-third">
+        <div class="pict"><img src="img/sample3.jpg" width="250px" height="250px" class=" img-thumbnail rounded-circle  img-fluid" style="padding:0;margin:15px 15px 15px 0; max-width:500px;"></div>
+        <div class="text">
+          <h4>「メインタイトル」</h4>
+          <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+              サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--課題一覧ボタン-->
+  <div class="col-12 clearfix">
+    <div class="mx-auto">
+      <!--centerタグはダメなのでほかのやり方でやること(分からなかったので代用)-->
+      <center>
+        <a class="btn btn-warning border-danger btn-kadai" href="#" role="button" style="border-radius:50px; margin:40px 0 80px 0;">
+          <h3 style="padding:5px 50px 0 50px"> <strong>課題一覧を見てみる</strong> </h3>
+        </a>
+      </center>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="py-4 bg-dark  text-light">
+    <div class="container text-center">
+      <!--ナビゲーション-->
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item"> <a class="nav-link" href="#">Top</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">News</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Menu</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Coupon</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Infomation</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+      </ul>
+      <p class="text-center"> <small>Copyright &copy;2019 Flee Style, All Rights Reserved</small> </p>
+    </div>
+  </footer>
+</body>
+</html>
