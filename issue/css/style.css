@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300display=swap');
+
+.bg-for {
+  background-color: #d4d9df !important;
+}
+
+.isuue-img, .isuue-img-ex{
+  width:900px;
+}
+.mt60{
+  margin-top:60px;
+}
+.isuue-midasi{
+  background: linear-gradient(transparent 90%, #FEFFA5 20%);
+  width:70%;
+  letter-spacing: 0.2em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.isuue-submidasi{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.mb60{
+  margin-bottom:60px;
+}
+.about p{
+  font-size: 15px;
+}
+
+@media (max-width:480px) {
+    .col-9 {
+        width: 100%;
+      }
+    .isuue-img{
+      width:100%;
+      height:450px;
+      object-fit: cover;
+    }
+    .isuue-img-ex{
+      width:100%;
+      height:450px;
+    }
+}
+/*森田追加*/
+p{
+  color: gray;
+}
